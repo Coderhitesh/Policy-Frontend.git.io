@@ -62,7 +62,7 @@
 }
 
 .loansHome-section .loan-container .loan-main-container .loan-box .navigater-box .same-navigate:hover {
-    background-color: #2e7799;
+    background-color: #6dcdfa;
 }
 
 .loansHome-section .loan-container .loan-main-container .loan-box .navigater-box .same-navigate:hover.same-navigate p {
@@ -86,8 +86,8 @@
     border-radius: 10px;
 }
 
-.active {
-    background: #074E6E !important;
+.active-tab {
+    background: #2FB4F0 !important;
     color: #fff !important;
     border-radius: 5px;
 }
@@ -120,7 +120,7 @@
 }
 
 .loansHome-section .loan-container .loan-main-container .loan-box .details .btns a {
-    background-color: #074E6E;
+    background-color: #2FB4F0;
     color: white;
     font-size: 13px;
     font-weight: 600;

@@ -22,10 +22,14 @@
     gap: 3px;
 }
 
-.OurPartner-section .OurPartner-container .heading span{
+.OurPartner-section .OurPartner-container .heading h2{
     font-size: 28px;
     font-weight: 700;
     
+}
+
+.OurPartner-section .OurPartner-container .heading h2 span{
+    color: #2FB4F0;
 }
     
 .OurPartner-section .OurPartner-container .heading p{

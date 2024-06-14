@@ -128,7 +128,7 @@ function OurPartner() {
         <section className='OurPartner-section'>
             <div className="OurPartner-container">
                 <div className="heading">
-                    <span>Our Partners</span>
+                    <h2>Our <span>Partners</span></h2>
                     <p>Leading insurers for your financial freedom</p>
                 </div>
                 <div className="main-data">

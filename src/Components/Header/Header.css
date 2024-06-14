@@ -79,6 +79,7 @@ header .container .bottom nav ul li{
 }
 
 header .container .bottom nav ul li a{
+    text-transform: uppercase;
     height: 100%;
     white-space: nowrap;
     font-size: 14px;
@@ -97,7 +98,7 @@ header .container .bottom .btn-box{
 }
 
 header .container .bottom .btn-box a{
-    background-color: #074e6e;
+    background-color: #2FB4F0;
     color: white;
     font-size: 13px;
     font-weight: 600;

@@ -31,19 +31,19 @@ function LoansHome() {
                 <div className="loan-main-container">
                     <div className="loan-box">
                         <div className="navigater-box">
-                            <div onClick={activePersonal} className={`same-navigate ${activeTab === 'Health' ? 'active' : ''}`}>
+                            <div onClick={activePersonal} className={`same-navigate ${activeTab === 'Health' ? 'active-tab' : ''}`}>
                                 <p>Health Insurance</p>
                             </div>
-                            <div onClick={activeEMI} className={`same-navigate ${activeTab === 'Car' ? 'active' : ''}`}>
+                            <div onClick={activeEMI} className={`same-navigate ${activeTab === 'Car' ? 'active-tab' : ''}`}>
                                 <p>Car Insurance</p>
                             </div>
-                            <div onClick={activeBusiness} className={`same-navigate ${activeTab === 'Term' ? 'active' : ''}`}>
+                            <div onClick={activeBusiness} className={`same-navigate ${activeTab === 'Term' ? 'active-tab' : ''}`}>
                                 <p>Term Insurance</p>
                             </div>
-                            <div onClick={activeInvoice} className={`same-navigate ${activeTab === 'Investment' ? 'active' : ''}`}>
+                            <div onClick={activeInvoice} className={`same-navigate ${activeTab === 'Investment' ? 'active-tab' : ''}`}>
                                 <p>Investment Plans</p>
                             </div>
-                            <div onClick={activeEbike} className={`same-navigate ${activeTab === 'Other' ? 'active' : ''}`}>
+                            <div onClick={activeEbike} className={`same-navigate ${activeTab === 'Other' ? 'active-tab' : ''}`}>
                                 <p>Other Insurance</p>
                             </div>
                         </div>
