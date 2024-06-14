@@ -11,14 +11,14 @@ function Header() {
                     <div className="content">
                         <Link >My Account</Link>
                         <Link >Contact Us</Link>
-                        <Link >About Us</Link>
+                        <Link to={'/about'} >About Us</Link>
                         <Link >Blogs</Link>
                     </div>
                 </div>
                 <div className="bottom">
-                    <div className="logo">
+                    <Link to={'/'} className="logo">
                         <img src={logo} alt="" />
-                    </div>
+                    </Link>
                     <nav>
                         <ul>
                             <li><Link to={''} >Health Insurance</Link></li>

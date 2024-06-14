@@ -28,7 +28,7 @@ function Footer() {
         <div className="col">
           <h2>Company</h2>
           <ul>
-            <li><Link>About Us</Link></li>
+            <li><Link to={'/about'}>About Us</Link></li>
             <li><Link>Contact us</Link></li>
           </ul>
         </div>
