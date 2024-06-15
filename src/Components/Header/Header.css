@@ -1,21 +1,22 @@
-header{
+header {
     width: 100%;
     box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.403);
     position: sticky;
     top: 0;
     left: 0;
     z-index: 99;
+
+    /* overflow-x: hidden; */
 }
 
-header .container{
+header .container {
     max-width: 1920px;
     margin: 0 auto;
-    /* padding: 0 20px; */
     display: flex;
     flex-direction: column;
 }
 
-header .container .top{
+header .container .top {
     padding: 12px 37px;
     background-color: #2FB4F0;
     display: flex;
@@ -23,12 +24,12 @@ header .container .top{
     justify-content: flex-end;
 }
 
-header .container .top .content{
+header .container .top .content {
     display: flex;
     align-items: center;
 }
 
-header .container .top .content a{
+header .container .top .content a {
     font-weight: 300;
     font-size: 12px;
     padding: 0px 7px;
@@ -36,11 +37,11 @@ header .container .top .content a{
     color: white;
 }
 
-header .container .top .content a:nth-child(4){
+header .container .top .content a:nth-child(4) {
     border-right: none;
 }
 
-header .container .bottom{
+header .container .bottom {
     background-color: white;
     height: 67px;
     display: flex;
@@ -48,7 +49,7 @@ header .container .bottom{
     justify-content: space-between;
 }
 
-header .container .bottom .logo{
+header .container .bottom .logo {
     height: 100%;
     width: 14%;
     display: flex;
@@ -56,29 +57,30 @@ header .container .bottom .logo{
     justify-content: center;
 }
 
-header .container .bottom .logo img{
+header .container .bottom .logo img {
     width: 35%;
 }
 
-header .container .bottom nav{
+header .container .bottom nav {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-header .container .bottom nav ul{
+header .container .bottom nav .desktop-mod {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-header .container .bottom nav ul li{
+header .container .bottom nav .desktop-mod li {
     height: 100%;
     padding: 0px 20px;
 }
 
-header .container .bottom nav ul li a{
+header .container .bottom nav .desktop-mod li a {
     text-transform: uppercase;
     height: 100%;
     white-space: nowrap;
@@ -88,7 +90,46 @@ header .container .bottom nav ul li a{
     justify-content: center;
 }
 
-header .container .bottom .btn-box{
+header .container .bottom nav .desktop-mod li .health-pointer {
+    position: relative;
+}
+
+header .container .bottom nav .desktop-mod li .health-pointer .health-hover {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 3px;
+    box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.403);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+header .container .bottom nav .desktop-mod li .health-pointer .health-hover li {
+    padding: 0%;
+    width: 100%;
+    /* height: 50%; */
+    overflow: hidden;
+}
+
+header .container .bottom nav .desktop-mod li .health-pointer .health-hover li a {
+    padding: 8px 0px;
+    /* height: 100%; */
+}
+
+header .container .bottom nav .desktop-mod li .health-pointer .health-hover li a:hover {
+    background-color: #f2f2f2;
+}
+
+.health-active {
+    max-height: 80px !important;
+}
+
+header .container .bottom .btn-box {
     background-color: #c4eafc;
     height: 100%;
     width: 14%;
@@ -97,7 +138,7 @@ header .container .bottom .btn-box{
     justify-content: center;
 }
 
-header .container .bottom .btn-box a{
+header .container .bottom .btn-box a {
     background-color: #2FB4F0;
     color: white;
     font-size: 13px;
@@ -106,41 +147,72 @@ header .container .bottom .btn-box a{
     border-radius: 8px;
 }
 
-.menu{
+.menu {
     display: none;
 }
 
+.mob-mod{
+    display: none;
+}
+
+
+
+header .container .bottom nav .mob-mod .health-mob-hover {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+header .container .bottom nav .mob-mod .health-mob-active {
+    max-height: 200px; /* Adjust this value as needed */
+    border-top: 1px solid rgb(146, 146, 146);
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+
+
 @media (max-width: 1013px) {
-    header .container .bottom nav ul li{
+    header .container .bottom nav .desktop-mod li {
         padding: 0px 10px;
     }
 
-    header .container .bottom .btn-box{
+    header .container .bottom .btn-box {
         width: 18%;
     }
 }
 
-@media (max-width:885px) {
+@media (max-width: 885px) {
 
-    header .container .top{
+    header .container .bottom nav .mob-mod .health-mob-hover {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    /* header .container .bottom nav .mob-mod .health-mob-hover li {
+        padding: 10px;
+    } */
+
+    header .container .top {
         justify-content: center;
     }
 
-    header .container .bottom{
+    header .container .bottom {
         padding: 0px 12px;
+        position: relative;
     }
 
-    .menu{
+    .menu {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    header .container .bottom .logo img{
+    header .container .bottom .logo img {
         width: 50%;
     }
 
-    .menu i{
+    .menu i {
         padding: 4px 9px;
         border-radius: 4px;
         font-size: 20px;
@@ -148,28 +220,88 @@ header .container .bottom .btn-box a{
         background-color: whitesmoke;
         color: black;
     }
-    
-    header .container .bottom nav{
+
+    header .container .bottom nav .desktop-mod {
         display: none;
     }
 
-    header .container .bottom .btn-box{
+    header .container .bottom .btn-box {
         background-color: white;
         width: auto;
         gap: 12px;
-        /* margin-right: 10px; */
+    }
+
+    header .container .bottom .btn-box a{
+        white-space: nowrap;
+    }
+
+    /* menu mod css  */
+
+    header .container .bottom nav .mob-mod{
+        height: 100vh !important;
+        width: 80%;
+        height: auto;
+        position: absolute;
+        top: 100%;
+        right: -110%;
+        z-index: 99999999;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-left: 1px solid rgb(145, 145, 145);
+
+        transition: all 0.4s linear;
+    }
+
+    header .container .bottom nav .mob-mod li{
+        width: 100%;
+        height: auto;
+    }
+
+    header .container .bottom nav .mob-mod li a{
+        border-bottom: 1px solid rgb(146, 146, 146);
+        height: auto;
+        display: inline-block;
+        padding: 10px 0px;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    header .container .bottom nav .mob-mod .social-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+
+    header .container .bottom nav .mob-mod .social-link i{
+        padding: 8px 16px;
+        border: 1px solid rgb(146, 146, 146);
+        font-size: 25px;
+    }
+
+    .menu-Active{
+        right: 0 !important;
+    }
+
+    .menu-overflow{
+        overflow: visible !important;
     }
 
 }
 
-@media (max-width:662px) {
-    header .container .bottom .logo img{
+@media (max-width: 662px) {
+    header .container .bottom .logo{
+        width: 46%;
+    }
+
+    header .container .bottom .logo img {
         width: 70%;
     }
 }
 
-@media (max-width:562px) {
-    header .container .bottom .logo img{
+@media (max-width: 562px) {
+    header .container .bottom .logo img {
         width: 100%;
     }
 }
