@@ -17,7 +17,8 @@ header .container {
 }
 
 header .container .top {
-    padding: 12px 37px;
+    /* padding: 12px 37px; */
+    height: 33px;
     background-color: #2FB4F0;
     display: flex;
     align-items: center;
@@ -97,8 +98,8 @@ header .container .bottom nav .desktop-mod li .health-pointer {
 header .container .bottom nav .desktop-mod li .health-pointer .health-hover {
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    left: 0%;
+    width: auto;
     max-height: 0;
     display: flex;
     flex-direction: column;
@@ -117,8 +118,8 @@ header .container .bottom nav .desktop-mod li .health-pointer .health-hover li {
 }
 
 header .container .bottom nav .desktop-mod li .health-pointer .health-hover li a {
-    padding: 8px 0px;
-    /* height: 100%; */
+    padding: 8px 5px;
+    justify-content: flex-start;
 }
 
 header .container .bottom nav .desktop-mod li .health-pointer .health-hover li a:hover {
@@ -126,7 +127,204 @@ header .container .bottom nav .desktop-mod li .health-pointer .health-hover li a
 }
 
 .health-active {
-    max-height: 80px !important;
+    max-height: 120px !important;
+}
+
+header .container .bottom nav .desktop-mod li .travel-pointer {
+    position: relative;
+}
+
+header .container .bottom nav .desktop-mod li .travel-pointer .travel-hover {
+    position: absolute;
+    top: 100%;
+    left: -30%;
+    width: auto;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 3px;
+    box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.403);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+header .container .bottom nav .desktop-mod li .travel-pointer .travel-hover li {
+    padding: 0%;
+    width: 100%;
+    overflow: hidden;
+}
+
+header .container .bottom nav .desktop-mod li .travel-pointer .travel-hover li a {
+    padding: 8px 5px;
+    justify-content: flex-start;
+}
+
+header .container .bottom nav .desktop-mod li .travel-pointer .travel-hover li a:hover {
+    background-color: #f2f2f2;
+}
+
+.travel-active {
+    max-height: 240px !important;
+}
+
+
+header .container .bottom nav .desktop-mod li .travel-pointer {
+    position: relative;
+}
+
+header .container .bottom nav .desktop-mod li .travel-pointer .travel-hover {
+    position: absolute;
+    top: 100%;
+    left: -30%;
+    width: auto;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 3px;
+    box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.403);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+header .container .bottom nav .desktop-mod li .travel-pointer .travel-hover li {
+    padding: 0%;
+    width: 100%;
+    overflow: hidden;
+}
+
+header .container .bottom nav .desktop-mod li .travel-pointer .travel-hover li a {
+    padding: 8px 5px;
+    justify-content: flex-start;
+}
+
+header .container .bottom nav .desktop-mod li .travel-pointer .travel-hover li a:hover {
+    background-color: #f2f2f2;
+}
+
+.travel-active {
+    max-height: 240px !important;
+}
+
+
+header .container .bottom nav .desktop-mod li .Motor-pointer {
+    position: relative;
+}
+
+header .container .bottom nav .desktop-mod li .Motor-pointer .Motor-hover {
+    position: absolute;
+    top: 100%;
+    left: -30%;
+    width: auto;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 3px;
+    box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.403);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+header .container .bottom nav .desktop-mod li .Motor-pointer .Motor-hover li {
+    padding: 0%;
+    width: 100%;
+    /* height: 50%; */
+    overflow: hidden;
+}
+
+header .container .bottom nav .desktop-mod li .Motor-pointer .Motor-hover li a {
+    padding: 8px 5px;
+    justify-content: flex-start;
+}
+
+header .container .bottom nav .desktop-mod li .Motor-pointer .Motor-hover li a:hover {
+    background-color: #f2f2f2;
+}
+
+.Motor-active {
+    max-height: 240px !important;
+}
+
+
+header .container .bottom nav .desktop-mod li .Corporate-pointer {
+    position: relative;
+}
+
+header .container .bottom nav .desktop-mod li .Corporate-pointer .Corporate-hover {
+    position: absolute;
+    top: 100%;
+    left: -30%;
+    width: auto;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 3px;
+    box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.403);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+header .container .bottom nav .desktop-mod li .Corporate-pointer .Corporate-hover li {
+    padding: 0%;
+    width: 100%;
+    /* height: 50%; */
+    overflow: hidden;
+}
+
+header .container .bottom nav .desktop-mod li .Corporate-pointer .Corporate-hover li a {
+    padding: 8px 5px;
+    justify-content: flex-start;
+}
+
+header .container .bottom nav .desktop-mod li .Corporate-pointer .Corporate-hover li a:hover {
+    background-color: #f2f2f2;
+}
+
+.Corporate-active {
+    max-height: 240px !important;
+}
+
+
+header .container .bottom nav .desktop-mod li .Other-pointer {
+    position: relative;
+}
+
+header .container .bottom nav .desktop-mod li .Other-pointer .Other-hover {
+    position: absolute;
+    top: 100%;
+    left: -30%;
+    width: auto;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 3px;
+    box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.403);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+header .container .bottom nav .desktop-mod li .Other-pointer .Other-hover li {
+    padding: 0%;
+    width: 100%;
+    /* height: 50%; */
+    overflow: hidden;
+}
+
+header .container .bottom nav .desktop-mod li .Other-pointer .Other-hover li a {
+    padding: 8px 5px;
+    justify-content: flex-start;
+}
+
+header .container .bottom nav .desktop-mod li .Other-pointer .Other-hover li a:hover {
+    background-color: #f2f2f2;
+}
+
+.Other-active {
+    max-height: 240px !important;
 }
 
 header .container .bottom .btn-box {
@@ -165,6 +363,54 @@ header .container .bottom nav .mob-mod .health-mob-hover {
 
 header .container .bottom nav .mob-mod .health-mob-active {
     max-height: 200px; /* Adjust this value as needed */
+    border-top: 1px solid rgb(146, 146, 146);
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+header .container .bottom nav .mob-mod .Travel-mob-hover {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+header .container .bottom nav .mob-mod .Travel-mob-active {
+    max-height: 400px; /* Adjust this value as needed */
+    border-top: 1px solid rgb(146, 146, 146);
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+header .container .bottom nav .mob-mod .Motor-mob-hover {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+header .container .bottom nav .mob-mod .Motor-mob-active {
+    max-height: 267px; /* Adjust this value as needed */
+    border-top: 1px solid rgb(146, 146, 146);
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+header .container .bottom nav .mob-mod .Corporate-mob-hover {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+header .container .bottom nav .mob-mod .Corporate-mob-active {
+    max-height: 334px; /* Adjust this value as needed */
+    border-top: 1px solid rgb(146, 146, 146);
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+header .container .bottom nav .mob-mod .Other-mob-hover {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+header .container .bottom nav .mob-mod .Other-mob-active {
+    max-height: 334px; /* Adjust this value as needed */
     border-top: 1px solid rgb(146, 146, 146);
     border-bottom: 1px solid rgb(146, 146, 146);
 }
@@ -238,7 +484,7 @@ header .container .bottom nav .mob-mod .health-mob-active {
     /* menu mod css  */
 
     header .container .bottom nav .mob-mod{
-        height: 100vh !important;
+        height: calc(100vh - 100px) !important;
         width: 80%;
         height: auto;
         position: absolute;
@@ -249,6 +495,7 @@ header .container .bottom nav .mob-mod .health-mob-active {
         flex-direction: column;
         background-color: white;
         border-left: 1px solid rgb(145, 145, 145);
+        overflow-y: auto;
 
         transition: all 0.4s linear;
     }
@@ -284,9 +531,9 @@ header .container .bottom nav .mob-mod .health-mob-active {
         right: 0 !important;
     }
 
-    .menu-overflow{
+    /* .menu-overflow{
         overflow: visible !important;
-    }
+    } */
 
 }
 
