@@ -1,6 +1,6 @@
 import React from 'react'
 import './MakeLoanHappen.css'
-import bg from './bg.svg'
+import bg from './bg.jpg'
 
 function MakeLoanHappen() {
     return (

@@ -1,0 +1,21 @@
+.contact-section{
+    width: 100%;
+}
+
+.contact-section .contact-container{
+    max-width: 1920px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .contact-container .heading{
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    background-color: #2FB4F0;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}

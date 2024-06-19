@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './LoansHome.css';
 import one from './one.webp';
+import l2 from './l2.jpg';
+import l3 from './l3.jpg';
+import l4 from './l4.jpg';
 
 function LoansHome() {
     const [activeTab, setActiveTab] = useState('Health');
@@ -35,13 +38,13 @@ function LoansHome() {
                                 <p>Health Insurance</p>
                             </div>
                             <div onClick={activeEMI} className={`same-navigate ${activeTab === 'Car' ? 'active-tab' : ''}`}>
-                                <p>Car Insurance</p>
+                                <p>Travel Insurance</p>
                             </div>
                             <div onClick={activeBusiness} className={`same-navigate ${activeTab === 'Term' ? 'active-tab' : ''}`}>
-                                <p>Term Insurance</p>
+                                <p>Motor Insurance</p>
                             </div>
                             <div onClick={activeInvoice} className={`same-navigate ${activeTab === 'Investment' ? 'active-tab' : ''}`}>
-                                <p>Investment Plans</p>
+                                <p>Corporate Plans</p>
                             </div>
                             <div onClick={activeEbike} className={`same-navigate ${activeTab === 'Other' ? 'active-tab' : ''}`}>
                                 <p>Other Insurance</p>
@@ -66,7 +69,7 @@ function LoansHome() {
                         )}
                         {activeTab === 'Car' && (
                             <div className="details">
-                                <img src={one} alt="EMI Free Loan" />
+                                <img src={l2} alt="EMI Free Loan" />
                                 <div className="right">
                                     <p>Protect your vehicle and drive with confidence with our comprehensive car insurance plans. Secure coverage for damages, theft, and third-party liabilities at affordable rates.</p>
                                     <ul>
@@ -82,7 +85,7 @@ function LoansHome() {
                         )}
                         {activeTab === 'Term' && (
                             <div className="details">
-                                <img src={one} alt="Business Loan" />
+                                <img src={l3} alt="Business Loan" />
                                 <div className="right">
                                     <p>Secure your family's future with our comprehensive term insurance plans. Get coverage amounts up to Rs.10 lakhs at affordable premiums.</p>
                                     <ul>
@@ -114,7 +117,7 @@ function LoansHome() {
                         )}
                         {activeTab === 'Other' && (
                             <div className="details">
-                                <img src={one} alt="e-Bike Loan" />
+                                <img src={l4} alt="e-Bike Loan" />
                                 <div className="right">
                                     <p>Secure your assets and peace of mind with our diverse insurance options. Apply now for customized insurance plans that fit your unique needs.</p>
                                     <ul>

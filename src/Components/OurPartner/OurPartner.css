@@ -56,8 +56,8 @@
     transition: all .1s;
     -webkit-transition: all .1s;
     -moz-transition: all .1s;
-    filter: grayscale(100%);
-    opacity: .6;
+    /* filter: grayscale(100%);
+    opacity: .6; */
     overflow: hidden;
 
     display: flex;
@@ -71,11 +71,11 @@
     object-fit: cover;
 }
     
-.OurPartner-section .OurPartner-container .main-data .img:hover{
+/* .OurPartner-section .OurPartner-container .main-data .img:hover{
     filter: grayscale(0);
     opacity: 1;
     cursor: pointer;
-}
+} */
 
 @media (max-width:970px) {
 
@@ -108,5 +108,7 @@
         padding: 0px;
         height: 70px;
     }
+
+    
     
 }

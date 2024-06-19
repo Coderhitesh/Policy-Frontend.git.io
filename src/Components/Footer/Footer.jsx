@@ -21,15 +21,15 @@ function Footer() {
           <h2>Resources</h2>
           <ul>
             <li><Link>Customer reviews</Link></li>
-            <li><Link>My Account</Link></li>
-            <li><Link>Blogs</Link></li>
+            {/* <li><Link>My Account</Link></li>
+            <li><Link>Blogs</Link></li> */}
           </ul>
         </div>
         <div className="col">
           <h2>Company</h2>
           <ul>
             <li><Link to={'/about'}>About Us</Link></li>
-            <li><Link>Contact us</Link></li>
+            <li><Link to={'/contact'}>Contact us</Link></li>
           </ul>
         </div>
         <div className="col">

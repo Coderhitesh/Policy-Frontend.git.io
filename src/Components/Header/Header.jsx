@@ -95,10 +95,10 @@ function Header() {
             <div className="container">
                 <div className="top">
                     <div className="content">
-                        <Link>My Account</Link>
-                        <Link>Contact Us</Link>
+                        {/* <Link>My Account</Link> */}
+                        <Link to={'/contact'}>Contact Us</Link>
                         <Link to={'/about'}>About Us</Link>
-                        <Link>Blogs</Link>
+                        {/* <Link>Blogs</Link> */}
                     </div>
                 </div>
                 <div className="bottom">
@@ -117,9 +117,9 @@ function Header() {
 
                                     Health Insurance
                                     <ul className={`health-hover ${isHealthActive ? 'health-active' : ''}`}>
-                                        <li><Link onClick={handleMenuDeActive} to={''}>Heath Gain Policy</Link></li>
-                                        <li><Link onClick={handleMenuDeActive} to={''}>Wellness</Link></li>
-                                        <li><Link onClick={handleMenuDeActive} to={''}>Personal Accident</Link></li>
+                                        <li><Link onClick={handleMenuDeActive} to={'/health-gain-policy'}>Heath Gain Policy</Link></li>
+                                        <li><Link onClick={handleMenuDeActive} to={'/wellness'}>Wellness</Link></li>
+                                        <li><Link onClick={handleMenuDeActive} to={'/personal-accident'}>Personal Accident</Link></li>
                                     </ul>
                                 </Link>
                             </li>
@@ -132,12 +132,12 @@ function Header() {
                             >
                                 Travel Insurance
                                 <ul className={`travel-hover ${isTravelActive ? 'travel-active' : ''}`}>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Overseas Travel Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Schengen Travel Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Student Travel Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Asia Travel Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Senior Citizen Travel Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Annual Multi Trip Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Overseas-Travel-Insurance'}>Overseas Travel Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Schengen-Travel-Insurance'}>Schengen Travel Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Student-Travel-Insurance'}>Student Travel Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Asia-Travel-Insurance'}>Asia Travel Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Senior-Citizen-Travel-Insurance'}>Senior Citizen Travel Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Annual-Multi-Trip-Insurance'}>Annual Multi Trip Insurance</Link></li>
                                 </ul>
                             </Link>
                             </li>
@@ -150,10 +150,10 @@ function Header() {
                             >
                                 Motor Insurance
                                 <ul className={`Motor-hover ${isMotorActive ? 'Motor-active' : ''}`}>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Car Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Two Wheeler Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Comprehensive Car Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Commercial Vehicle Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Car-Insurance'}>Car Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Two-Wheeler-Insurance'}>Two Wheeler Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Comprehensive-Car-Insurance'}>Comprehensive Car Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Commercial-Vehicle-Insurance'}>Commercial Vehicle Insurance</Link></li>
                                 </ul>
                             </Link></li>
                             <li><Link
@@ -165,11 +165,11 @@ function Header() {
                             >
                                 Corporate Plans
                                 <ul className={`Corporate-hover ${isCorporateActive ? 'Corporate-active' : ''}`}>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Fire Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Engineering Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Marine Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Liability Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Package Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Fire-Insurance'}>Fire Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Engineering-Insurance'}>Engineering Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Marine-Insurance'}>Marine Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Liability-Insurance'}>Liability Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Package-Insurance'}>Package Insurance</Link></li>
                                 </ul>
                             </Link></li>
                             <li><Link
@@ -181,11 +181,11 @@ function Header() {
                             >
                                 Other Insurance
                                 <ul className={`Other-hover ${isOtherActive ? 'Other-active' : ''}`}>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Burglary and Housebreaking</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Fire Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Package Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Marine Insurance</Link></li>
-                                    <li><Link onClick={handleMenuDeActive} to={''}>Group Mediclaim Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Burglary-and-Housebreaking'}>Burglary and Housebreaking</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Fire-Insurance'}>Fire Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Package-Insurance'}>Package Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Marine-Insurance'}>Marine Insurance</Link></li>
+                                    <li><Link onClick={handleMenuDeActive} to={'/Group-Mediclaim-Insurance'}>Group Mediclaim Insurance</Link></li>
                                 </ul>
                             </Link></li>
                         </ul>
@@ -198,9 +198,9 @@ function Header() {
                                     Health Insurance
                                 </Link>
                                 <ul className={`health-mob-hover ${isHealthMobActive ? 'health-mob-active' : ''}`}>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleHealthMobActive()}}>Heath gain policy</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleHealthMobActive()}}>Wellness</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleHealthMobActive()}}>Personal accident</Link></li>
+                                    <li><Link to={'/health-gain-policy'} onClick={() => {handleMenuDeActive() , handleHealthMobActive()}}><i class="ri-arrow-right-line"></i> Heath gain policy</Link></li>
+                                    <li><Link to={'/wellness'} onClick={() => {handleMenuDeActive() , handleHealthMobActive()}}><i class="ri-arrow-right-line"></i> Wellness</Link></li>
+                                    <li><Link to={'/personal-accident'} onClick={() => {handleMenuDeActive() , handleHealthMobActive()}}><i class="ri-arrow-right-line"></i> Personal accident</Link></li>
                                 </ul>
                             </li>
                             <li>
@@ -210,12 +210,12 @@ function Header() {
                                 Travel Insurance
                             </Link>
                                 <ul className={`Travel-mob-hover ${isTravelMobActive ? 'Travel-mob-active' : ''}`}>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleTravelMobActive()}}>Overseas Travel Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleTravelMobActive()}}>Schengen Travel Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleTravelMobActive()}}>Student Travel Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleTravelMobActive()}}>Asia Travel Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleTravelMobActive()}}>Senior Citizen Travel Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleTravelMobActive()}}>Annual Multi Trip Insurance</Link></li>
+                                    <li><Link to={'/Overseas-Travel-Insurance'} onClick={() => {handleMenuDeActive() , handleTravelMobActive()}}><i class="ri-arrow-right-line"></i> Overseas Travel Insurance</Link></li>
+                                    <li><Link to={'/Schengen-Travel-Insurance'} onClick={() => {handleMenuDeActive() , handleTravelMobActive()}}><i class="ri-arrow-right-line"></i> Schengen Travel Insurance</Link></li>
+                                    <li><Link to={'/Student-Travel-Insurance'} onClick={() => {handleMenuDeActive() , handleTravelMobActive()}}><i class="ri-arrow-right-line"></i> Student Travel Insurance</Link></li>
+                                    <li><Link to={'/Asia-Travel-Insurance'} onClick={() => {handleMenuDeActive() , handleTravelMobActive()}}><i class="ri-arrow-right-line"></i> Asia Travel Insurance</Link></li>
+                                    <li><Link to={'/Senior-Citizen-Travel-Insurance'} onClick={() => {handleMenuDeActive() , handleTravelMobActive()}}><i class="ri-arrow-right-line"></i> Senior Citizen Travel Insurance</Link></li>
+                                    <li><Link to={'/Annual-Multi-Trip-Insurance'} onClick={() => {handleMenuDeActive() , handleTravelMobActive()}}><i class="ri-arrow-right-line"></i> Annual Multi Trip Insurance</Link></li>
                                 </ul>
                             </li>
 
@@ -224,10 +224,10 @@ function Header() {
                             >Motor Insurance
                             </Link>
                                 <ul className={`Motor-mob-hover ${isMotorMobActive ? 'Motor-mob-active' : ''}`}>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleMotorMobActive()}}>Car Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleMotorMobActive()}}>Two Wheeler Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleMotorMobActive()}}>Comprehensive Car Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleMotorMobActive()}}>Commercial Vehicle Insurance</Link></li>
+                                    <li><Link to={'/Car-Insurance'} onClick={() => {handleMenuDeActive() , handleMotorMobActive()}}><i class="ri-arrow-right-line"></i> Car Insurance</Link></li>
+                                    <li><Link to={'/Two-Wheeler-Insurance'} onClick={() => {handleMenuDeActive() , handleMotorMobActive()}}><i class="ri-arrow-right-line"></i> Two Wheeler Insurance</Link></li>
+                                    <li><Link to={'/Comprehensive-Car-Insurance'} onClick={() => {handleMenuDeActive() , handleMotorMobActive()}}><i class="ri-arrow-right-line"></i> Comprehensive Car Insurance</Link></li>
+                                    <li><Link to={'/Commercial-Vehicle-Insurance'} onClick={() => {handleMenuDeActive() , handleMotorMobActive()}}><i class="ri-arrow-right-line"></i> Commercial Vehicle Insurance</Link></li>
                                 </ul>
                             </li>
                             <li><Link
@@ -235,11 +235,11 @@ function Header() {
                             >Corporate Plans
                             </Link>
                                 <ul className={`Corporate-mob-hover ${isCorporateMobActive ? 'Corporate-mob-active' : ''}`}>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleCorporateMobActive()}}>Fire Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleCorporateMobActive()}}>Engineering Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleCorporateMobActive()}}>Marine Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleCorporateMobActive()}}>Liability Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleCorporateMobActive()}}>Package Insurance</Link></li>
+                                    <li><Link to={'/Fire-Insurance'} onClick={() => {handleMenuDeActive() , handleCorporateMobActive()}}><i class="ri-arrow-right-line"></i> Fire Insurance</Link></li>
+                                    <li><Link to={'/Engineering-Insurance'} onClick={() => {handleMenuDeActive() , handleCorporateMobActive()}}><i class="ri-arrow-right-line"></i> Engineering Insurance</Link></li>
+                                    <li><Link to={'/Marine-Insurance'} onClick={() => {handleMenuDeActive() , handleCorporateMobActive()}}><i class="ri-arrow-right-line"></i> Marine Insurance</Link></li>
+                                    <li><Link to={'/Liability-Insurance'} onClick={() => {handleMenuDeActive() , handleCorporateMobActive()}}><i class="ri-arrow-right-line"></i> Liability Insurance</Link></li>
+                                    <li><Link to={'/Package-Insurance'} onClick={() => {handleMenuDeActive() , handleCorporateMobActive()}}><i class="ri-arrow-right-line"></i> Package Insurance</Link></li>
                                 </ul>
                             </li>
                             <li><Link
@@ -247,11 +247,11 @@ function Header() {
                             >Other Insurance
                             </Link>
                             <ul className={`Other-mob-hover ${isOtherMobActive ? 'Other-mob-active' : ''}`}>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleOtherMobActive()}}>Burglary and Housebreaking</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleOtherMobActive()}}>Fire Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleOtherMobActive()}}>Package Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleOtherMobActive()}}>Marine Insurance</Link></li>
-                                    <li><Link onClick={() => {handleMenuDeActive() , handleOtherMobActive()}}>Group Mediclaim Insurance</Link></li>
+                                    <li><Link to={'/Burglary-and-Housebreaking'} onClick={() => {handleMenuDeActive() , handleOtherMobActive()}}><i class="ri-arrow-right-line"></i> Burglary and Housebreaking</Link></li>
+                                    <li><Link to={'/Fire-Insurance'} onClick={() => {handleMenuDeActive() , handleOtherMobActive()}}><i class="ri-arrow-right-line"></i> Fire Insurance</Link></li>
+                                    <li><Link to={'/Package-Insurance'} onClick={() => {handleMenuDeActive() , handleOtherMobActive()}}><i class="ri-arrow-right-line"></i> Package Insurance</Link></li>
+                                    <li><Link to={'/Marine-Insurance'} onClick={() => {handleMenuDeActive() , handleOtherMobActive()}}><i class="ri-arrow-right-line"></i> Marine Insurance</Link></li>
+                                    <li><Link to={'/Group-Mediclaim-Insurance'} onClick={() => {handleMenuDeActive() , handleOtherMobActive()}}><i class="ri-arrow-right-line"></i> Group Mediclaim Insurance</Link></li>
                                 </ul>
                             </li>
                             <div className="social-link">

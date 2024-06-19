@@ -7,7 +7,7 @@ function AdvantageHome() {
     <section className='AdvantageHome-section'>
       <div className="AdvantageHome-container">
         <div className="heading">
-            <h2>LoanTap’s <span>Advantage</span></h2>
+            <h2>Apni Policy’s <span>Advantage</span></h2>
             <p>Here’s how we make our insurance offerings Fast, Flexible and Friendly!</p>
         </div>
 
@@ -20,8 +20,8 @@ function AdvantageHome() {
                     <div className="icon">
                     <i class="ri-money-rupee-circle-line"></i>
                     </div>
-                    <h3>Customized Personal Insurance</h3>
-                    <p>An array of customized and flexible personal insurance products</p>
+                    <h3>Customized Insurance</h3>
+                    <p>An array of customized and flexible insurance</p>
                 </div>
                 <div className="col">
                     <div className="icon">
@@ -35,7 +35,7 @@ function AdvantageHome() {
                     <i class="ri-money-rupee-circle-line"></i>
                     </div>
                     <h3>Instant Approval & Disbursal</h3>
-                    <p>Easy online process for quick loan sanction and disbursal within 24-36 hours</p>
+                    <p>Easy online process for quick insurance and disbursal within 24-36 hours</p>
                 </div>
                 <div className="col">
                     <div className="icon">
