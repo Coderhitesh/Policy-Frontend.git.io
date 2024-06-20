@@ -3,6 +3,9 @@ import AdvantageHome from '../../Components/AdvantageHome/AdvantageHome';
 import { Link } from 'react-router-dom';
 
 function GroupMediclaimInsurance() {
+  const handleAddSesstion = () => {
+    sessionStorage.setItem('InsuranceName' , 'Group Mediclaim Insurance')
+}
   return (
     <section className='HealthGainPolicy-section'>
       <div className="HealthGainPolicy-container">
@@ -11,7 +14,7 @@ function GroupMediclaimInsurance() {
               <span>Group Mediclaim Insurance</span>
               <h3>Comprehensive Health Coverage for Your Employees - Quick & Easy Enrollment Process</h3>
               <p>Apni Policy offers Group Mediclaim Insurance with quick approval and flexible coverage options. Get hassle-free online health insurance for your employees at competitive premiums with minimal documentation.</p>
-              <Link to="/form">GET QUOTE</Link>
+              <Link onClick={handleAddSesstion} to="/form">APPLY NOW</Link>
             </div>
             <div className="right"></div>
         </div>

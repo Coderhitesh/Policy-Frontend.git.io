@@ -3,6 +3,9 @@ import AdvantageHome from '../../Components/AdvantageHome/AdvantageHome'
 import { Link } from 'react-router-dom'
 
 function SchengenTravelInsurance() {
+  const handleAddSesstion = () => {
+    sessionStorage.setItem('InsuranceName' , 'Schengen Travel Insurance')
+}
   return (
     <section className='HealthGainPolicy-section'>
       <div className="HealthGainPolicy-container">
@@ -11,7 +14,7 @@ function SchengenTravelInsurance() {
               <span>Schengen Travel Insurance</span>
               <h3>Travel with Confidence with Coverage Up to ₹10 Lakh - Quick & Easy Enrollment Process</h3>
               <p>Apni Policy offers Schengen Travel Insurance with quick approval and flexible coverage options. Get hassle-free online travel insurance at low premiums with minimal documentation.</p>
-              <Link to="/form">APPLY NOW</Link>
+              <Link onClick={handleAddSesstion} to="/form">APPLY NOW</Link>
             </div>
             <div className="right"></div>
         </div>

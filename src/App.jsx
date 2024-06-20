@@ -27,6 +27,7 @@ import MarineInsurance from './Pages/InsurancePages/MarineInsurance'
 import LiabilityInsurance from './Pages/InsurancePages/LiabilityInsurance'
 import PackageInsurance from './Pages/InsurancePages/PackageInsurance'
 import Form from './Pages/Form/Form'
+import ApplyForm from './Pages/Form/ApplyForm'
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
           {/* <Route path='/single-page' element={<SinglePage />} /> */}
           <Route path='/contact' element={<Contact />} />
           <Route path='/form' element={<Form />} />
+          <Route path='/active-form' element={<ApplyForm />} />
 
           <Route path='/health-gain-policy' element={<HealthGainPolicy />} />
           <Route path='/wellness' element={<Wellness />} />

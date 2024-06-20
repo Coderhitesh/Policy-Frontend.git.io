@@ -4,6 +4,8 @@ import one from './one.webp';
 import l2 from './l2.jpg';
 import l3 from './l3.jpg';
 import l4 from './l4.jpg';
+import health from './health.jpg'
+import cor from './cor.jpg'
 
 function LoansHome() {
     const [activeTab, setActiveTab] = useState('Health');
@@ -52,7 +54,7 @@ function LoansHome() {
                         </div>
                         {activeTab === 'Health' && (
                             <div className="details">
-                                <img src={one} alt="Personal Loan" />
+                                <img src={health} alt="Personal Loan" />
                                 <div className="right">
                                     <p>Whether you're seeking comprehensive coverage for routine check-ups or need support during a medical emergency, our health insurance plans are designed to provide peace of mind. We offer unique health insurance products tailored to match your specific requirements.</p>
                                     <ul>
@@ -101,7 +103,7 @@ function LoansHome() {
                         )}
                         {activeTab === 'Investment' && (
                             <div className="details">
-                                <img src={one} alt="Invoice Loan" />
+                                <img src={cor} alt="Invoice Loan" />
                                 <div className="right">
                                     <p>Designed to help you achieve your financial goals, our investment plans offer a range of options for tenures ranging from 1 to 10 years.</p>
                                     <ul>

@@ -3,6 +3,9 @@ import AdvantageHome from '../../Components/AdvantageHome/AdvantageHome'
 import { Link } from 'react-router-dom'
 
 function PersonalAccident() {
+  const handleAddSesstion = () => {
+    sessionStorage.setItem('InsuranceName' , 'Personal Accident')
+}
   return (
     <section className='HealthGainPolicy-section'>
       <div className="HealthGainPolicy-container">
@@ -11,7 +14,7 @@ function PersonalAccident() {
               <span>Personal Accident</span>
               <h3>Protect Yourself with Coverage Up to ₹10 Lakh - Quick & Easy Enrollment Process</h3>
               <p>Apni Policy offers Personal Accident Policies with quick approval and flexible coverage options. Get hassle-free online accident insurance at low premiums with minimal documentation.</p>
-              <Link to="/form">APPLY NOW</Link>
+              <Link onClick={handleAddSesstion} to="/form">APPLY NOW</Link>
             </div>
             <div className="right"></div>
         </div>

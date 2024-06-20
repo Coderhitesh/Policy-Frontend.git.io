@@ -3,6 +3,9 @@ import AdvantageHome from '../../Components/AdvantageHome/AdvantageHome'
 import { Link } from 'react-router-dom'
 
 function AnnualMultiTripInsurance() {
+  const handleAddSesstion = () => {
+    sessionStorage.setItem('InsuranceName' , 'Annual Multi-Trip Insurance')
+}
   return (
     <section className='HealthGainPolicy-section'>
       <div className="HealthGainPolicy-container">
@@ -11,7 +14,7 @@ function AnnualMultiTripInsurance() {
               <span>Annual Multi-Trip Insurance</span>
               <h3>Travel Year-Round with Coverage Up to ₹10 Lakh - Quick & Easy Enrollment Process</h3>
               <p>Apni Policy offers Annual Multi-Trip Insurance with quick approval and flexible coverage options. Get hassle-free online travel insurance at low premiums with minimal documentation.</p>
-              <Link to="/form">APPLY NOW</Link>
+              <Link onClick={handleAddSesstion} to="/form">APPLY NOW</Link>
             </div>
             <div className="right"></div>
         </div>

@@ -1,25 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './form.css';
 
-function Form() {
-  const InsuranceName = sessionStorage.getItem('InsuranceName');
-  
+function ApplyForm() {
+  const InsuranceName = sessionStorage.getItem('InsuranceName')
+  // console.log(InsuranceName)
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
     phone: '',
     address: '',
     zipCode: '',
-    insuranceType: InsuranceName || '',
+    insuranceType: '',
     additionalInfo: '',
   });
-
-  useEffect(() => {
-    setFormData((prevData) => ({
-      ...prevData,
-      insuranceType: InsuranceName || '',
-    }));
-  }, [InsuranceName]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -33,22 +26,6 @@ function Form() {
     e.preventDefault();
     console.log('Form data submitted:', formData);
     // Handle form submission (e.g., send data to backend)
-    // console.log(formData)
-
-    // Clear sessionStorage
-    sessionStorage.removeItem('InsuranceName');
-
-
-    // Clear form data
-    setFormData({
-      fullName: '',
-      email: '',
-      phone: '',
-      address: '',
-      zipCode: '',
-      insuranceType: '',
-      additionalInfo: '',
-    });
   };
 
   return (
@@ -112,15 +89,36 @@ function Form() {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="insuranceType">Insurance Name</label>
-            <input
-              type="text"
+            <label htmlFor="insuranceType">Type of Insurance</label>
+            <select
               id="insuranceType"
               name="insuranceType"
               value={formData.insuranceType}
               onChange={handleChange}
-              readOnly
-            />
+              required
+            >
+              <option value="">Select an option</option>
+              <option value="Heath Gain Policy">Heath Gain Policy</option>
+              <option value="Wellness">Wellness</option>
+              <option value="Personal Accident">Personal Accident</option>
+              <option value="Overseas Travel Insurance">Overseas Travel Insurance</option>
+              <option value="Schengen Travel Insurance">Schengen Travel Insurance</option>
+              <option value="Student Travel Insurance">Student Travel Insurance</option>
+              <option value="Asia Travel Insurance">Asia Travel Insurance</option>
+              <option value="Senior Citizen Travel Insurance">Senior Citizen Travel Insurance</option>
+              <option value="Annual Multi Trip Insurance">Annual Multi Trip Insurance</option>
+              <option value="Car Insurance">Car Insurance</option>
+              <option value="Two Wheeler Insurance">Two Wheeler Insurance</option>
+              <option value="Comprehensive Car Insurance">Comprehensive Car Insurance</option>
+              <option value="Commercial Vehicle Insurance">Commercial Vehicle Insurance</option>
+              <option value="Fire Insurance">Fire Insurance</option>
+              <option value="Engineering Insurance">Engineering Insurance</option>
+              <option value="Marine Insurance">Marine Insurance</option>
+              <option value="Liability Insurance">Liability Insurance</option>
+              <option value="Package Insurance">Package Insurance</option>
+              <option value="Burglary and Housebreaking">Burglary and Housebreaking</option>
+              <option value="Group Mediclaim Insurance">Group Mediclaim Insurance</option>
+            </select>
           </div>
           <div className="form-group">
             <label htmlFor="additionalInfo">Additional Information</label>
@@ -141,4 +139,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default ApplyForm;

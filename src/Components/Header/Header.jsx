@@ -262,7 +262,7 @@ function Header() {
                         </ul>
                     </nav>
                     <div className="btn-box">
-                        <Link onClick={handleMenuDeActive}>Apply Now</Link>
+                        <Link to={'/active-form'} onClick={handleMenuDeActive}>Apply Now</Link>
                         <div className="menu" onClick={handleMenuActive}>
                             <i className="ri-menu-line"></i>
                         </div>

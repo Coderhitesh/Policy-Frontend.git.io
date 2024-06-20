@@ -3,6 +3,9 @@ import AdvantageHome from '../../Components/AdvantageHome/AdvantageHome';
 import { Link } from 'react-router-dom';
 
 function CommercialVehicleInsurance() {
+  const handleAddSesstion = () => {
+    sessionStorage.setItem('InsuranceName' , 'Commercial Vehicle Insurance')
+}
   return (
     <section className='HealthGainPolicy-section'>
       <div className="HealthGainPolicy-container">
@@ -11,7 +14,7 @@ function CommercialVehicleInsurance() {
               <span>Commercial Vehicle Insurance</span>
               <h3>Protect Your Business Assets with Comprehensive Coverage - Quick & Easy Enrollment Process</h3>
               <p>Apni Policy offers Commercial Vehicle Insurance with quick approval and flexible coverage options. Get hassle-free online insurance for your commercial vehicles at competitive premiums with minimal documentation.</p>
-              <Link to="/form">GET QUOTE</Link>
+              <Link onClick={handleAddSesstion} to="/form">APPLY NOW</Link>
             </div>
             <div className="right"></div>
         </div>

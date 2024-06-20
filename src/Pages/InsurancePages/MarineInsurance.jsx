@@ -3,6 +3,9 @@ import AdvantageHome from '../../Components/AdvantageHome/AdvantageHome';
 import { Link } from 'react-router-dom';
 
 function MarineInsurance() {
+  const handleAddSesstion = () => {
+    sessionStorage.setItem('InsuranceName' , 'Marine Insurance')
+}
   return (
     <section className='HealthGainPolicy-section'>
       <div className="HealthGainPolicy-container">
@@ -11,7 +14,7 @@ function MarineInsurance() {
               <span>Marine Insurance</span>
               <h3>Protect Your Shipments with Comprehensive Coverage - Quick & Easy Enrollment Process</h3>
               <p>Apni Policy offers Marine Insurance with quick approval and flexible coverage options. Get hassle-free online insurance for your marine shipments at competitive premiums with minimal documentation.</p>
-              <Link to="/form">GET QUOTE</Link>
+              <Link onClick={handleAddSesstion} to="/form">APPLY NOW</Link>
             </div>
             <div className="right"></div>
         </div>

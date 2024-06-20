@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import AdvantageHome from '../../Components/AdvantageHome/AdvantageHome'
 
 function Wellness() {
+    const handleAddSesstion = () => {
+        sessionStorage.setItem('InsuranceName' , 'Wellness')
+    }
     return (
         <section className='HealthGainPolicy-section'>
             <div className="HealthGainPolicy-container">
@@ -11,7 +14,7 @@ function Wellness() {
                         <span>Wellness</span>
                         <h3>Ensure Your Wellness with Coverage Up to ₹10 Lakh - Fast & Simple Enrollment Process</h3>
                         <p>Apni Policy offers Wellness Plans with quick approval and flexible coverage options. Enjoy hassle-free online enrollment for comprehensive wellness coverage at low premiums with minimal documentation.</p>
-                        <Link to="/form">APPLY NOW</Link>
+                        <Link onClick={handleAddSesstion} to="/form">APPLY NOW</Link>
                     </div>
                     <div className="right"></div>
                 </div>
