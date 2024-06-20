@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './About.css'
 import { Breadcrumbs } from "@material-tailwind/react";
 import { Link } from 'react-router-dom';
 
 
 function About() {
+  useEffect(()=>{
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    })
+},[])
   return (
     <section className='About-section'>
       <div className="About-container">

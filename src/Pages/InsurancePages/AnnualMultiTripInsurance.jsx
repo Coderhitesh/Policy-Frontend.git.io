@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AdvantageHome from '../../Components/AdvantageHome/AdvantageHome'
 import { Link } from 'react-router-dom'
 
 function AnnualMultiTripInsurance() {
+  useEffect(()=>{
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    })
+},[])
   const handleAddSesstion = () => {
     sessionStorage.setItem('InsuranceName' , 'Annual Multi-Trip Insurance')
 }

@@ -14,7 +14,15 @@ function Form() {
     additionalInfo: '',
   });
 
+  useEffect(()=>{
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    })
+},[])
+
   useEffect(() => {
+  
     setFormData((prevData) => ({
       ...prevData,
       insuranceType: InsuranceName || '',
@@ -38,7 +46,6 @@ function Form() {
     // Clear sessionStorage
     sessionStorage.removeItem('InsuranceName');
 
-
     // Clear form data
     setFormData({
       fullName: '',
@@ -58,38 +65,52 @@ function Form() {
           <h2>Personal Detail</h2>
         </div>
         <form className="main-form" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="fullName">Full Name</label>
-            <input
-              type="text"
-              id="fullName"
-              name="fullName"
-              value={formData.fullName}
-              onChange={handleChange}
-              required
-            />
+          <div className="form-row">
+            <div className="form-group half-width">
+              <label htmlFor="fullName">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group half-width">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
           </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="phone">Phone Number</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-            />
+          <div className="form-row">
+            <div className="form-group half-width">
+              <label htmlFor="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group half-width">
+              <label htmlFor="zipCode">Zip Code</label>
+              <input
+                type="text"
+                id="zipCode"
+                name="zipCode"
+                value={formData.zipCode}
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div className="form-group">
             <label htmlFor="address">Address</label>
@@ -98,16 +119,6 @@ function Form() {
               id="address"
               name="address"
               value={formData.address}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="zipCode">Zip Code</label>
-            <input
-              type="text"
-              id="zipCode"
-              name="zipCode"
-              value={formData.zipCode}
               onChange={handleChange}
             />
           </div>

@@ -5,8 +5,6 @@ header {
     top: 0;
     left: 0;
     z-index: 99;
-
-    /* overflow-x: hidden; */
 }
 
 header .container {
@@ -17,7 +15,6 @@ header .container {
 }
 
 header .container .top {
-    /* padding: 12px 37px; */
     height: 33px;
     background-color: #2FB4F0;
     display: flex;
@@ -38,7 +35,7 @@ header .container .top .content a {
     color: white;
 }
 
-header .container .top .content a:nth-child(4) {
+header .container .top .content a:nth-child(2) {
     border-right: none;
 }
 
@@ -516,8 +513,24 @@ header .container .bottom nav .mob-mod .Other-mob-active {
         padding-left: 10px;
     }
 
+    header .container .bottom nav .mob-mod li .formarrow{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 9px 10px;
+    }
+
+    header .container .bottom nav .mob-mod li .formarrow i {
+        transition: transform 0.3s ease;
+    }
+    
+    header .container .bottom nav .mob-mod li .formarrow i.rotate {
+        transform: rotate(180deg);
+    }
+    
+
     header .container .bottom nav .mob-mod li ul li a{
-        padding-left: 20px;
+        padding-left: 10px;
         color: rgb(74, 74, 74);
     }
 
@@ -534,9 +547,21 @@ header .container .bottom nav .mob-mod .Other-mob-active {
     }
 
     header .container .bottom nav .mob-mod .social-link i{
-        padding: 8px 16px;
+        padding: 5px 18px;
         border: 1px solid rgb(146, 146, 146);
         font-size: 25px;
+    }
+
+    header .container .bottom nav .mob-mod .social-link i:nth-child(1){
+        color:#1877F2;
+    }
+
+    header .container .bottom nav .mob-mod .social-link i:nth-child(2){
+        color: #feda75;
+    }
+
+    header .container .bottom nav .mob-mod .social-link i:nth-child(3){
+        color: 	#1DA1F2;
     }
 
     .menu-Active{
@@ -560,6 +585,18 @@ header .container .bottom nav .mob-mod .Other-mob-active {
 }
 
 @media (max-width: 562px) {
+    header .container .bottom .logo{
+        width: 46%;
+    }
+    header .container .bottom .logo img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 420px) {
+    header .container .bottom .logo{
+        width: 46%;
+    }
     header .container .bottom .logo img {
         width: 100%;
     }

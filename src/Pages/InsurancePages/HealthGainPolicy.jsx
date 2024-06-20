@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './HealthGainPolicy.css'
 import { Link } from 'react-router-dom'
 import AdvantageHome from '../../Components/AdvantageHome/AdvantageHome'
 
 function HealthGainPolicy() {
+  useEffect(()=>{
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    })
+},[])
   const handleAddSesstion = () => {
     sessionStorage.setItem('InsuranceName' , 'Health Gain Policy')
 }

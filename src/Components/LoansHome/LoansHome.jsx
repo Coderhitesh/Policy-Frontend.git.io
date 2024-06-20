@@ -62,10 +62,10 @@ function LoansHome() {
                                         <li><i className="ri-arrow-right-s-line"></i> Coverage amount up to Rs.10 lakhs</li>
                                         <li><i className="ri-arrow-right-s-line"></i> Flexible repayment options</li>
                                     </ul>
-                                    <div className="btns">
+                                    {/* <div className="btns">
                                         <a href="">APPLY FOR INDIVIDUAL</a>
                                         <a href="">APPLY FOR FAMILY</a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         )}
@@ -79,9 +79,9 @@ function LoansHome() {
                                         <li><i className="ri-arrow-right-s-line"></i> Quick approval and claim processing</li>
                                         <li><i className="ri-arrow-right-s-line"></i> No hidden charges</li>
                                     </ul>
-                                    <div className="btns">
+                                    {/* <div className="btns">
                                         <a href="">APPLY NOW</a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         )}
@@ -95,9 +95,9 @@ function LoansHome() {
                                         <li><i className="ri-arrow-right-s-line"></i> Quick approval and policy issuance</li>
                                         <li><i className="ri-arrow-right-s-line"></i> No hidden charges</li>
                                     </ul>
-                                    <div className="btns">
+                                    {/* <div className="btns">
                                         <a href="">APPLY NOW</a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         )}
@@ -111,9 +111,9 @@ function LoansHome() {
                                         <li><i className="ri-arrow-right-s-line"></i> Easy onboarding process</li>
                                         <li><i className="ri-arrow-right-s-line"></i> Instant approval</li>
                                     </ul>
-                                    <div className="btns">
+                                    {/* <div className="btns">
                                         <a href="">APPLY NOW</a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         )}
@@ -127,9 +127,9 @@ function LoansHome() {
                                         <li><i className="ri-arrow-right-s-line"></i> Quick approval process</li>
                                         <li><i className="ri-arrow-right-s-line"></i> Competitive premiums</li>
                                     </ul>
-                                    <div className="btns">
+                                    {/* <div className="btns">
                                         <a href="">APPLY NOW</a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         )}

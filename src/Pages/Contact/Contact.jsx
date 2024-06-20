@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './contact.css'
 import { Breadcrumbs } from "@material-tailwind/react";
 import { Link } from 'react-router-dom';
 import HaveQuestion from '../../Components/HaveQuestion/HaveQuestion';
 
 function Contact() {
-  
+  useEffect(()=>{
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    })
+},[])
   return (
     <section className='contact-section'>
       <div className="contact-container">
